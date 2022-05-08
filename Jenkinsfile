@@ -1,9 +1,6 @@
 pipeline {
-    agent {
-        node {
-            label 'metersphere'
-        }
-    }
+    agent any
+    
     options { quietPeriod(600) }
     environment { 
         IMAGE_NAME = 'metersphere'
